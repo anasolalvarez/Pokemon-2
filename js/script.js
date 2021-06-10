@@ -33,6 +33,14 @@ var pokemonRepository = (function() {
 
 console.log(pokemonRepository.getAll());
 
+//
+function myLoopFunction(pokemonRepository) {
+  console.log(pokemonRepository.name + ' is ' + pokemonRepository.height + ' height.');
+}
+pokemonRepository.forEach(myLoopFunction);
+
+
+
 // console.log(pokemonList);
 //
 // let pokemonList2 = [{
@@ -54,9 +62,3 @@ console.log(pokemonRepository.getAll());
 // }];
 //
 // console.log(pokemonList2);
-
-
-function myLoopFunction(pokemonRepository) {
-  console.log(ppokemonRepository.name + ' is ' + pokemonRepository.height + ' height.');
-}
-pokemonRepository.forEach(myLoopFunction);
